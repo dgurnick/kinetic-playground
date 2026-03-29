@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs | Kinetic Playground</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#00414f",
+              "secondary": "#854f00",
+              "tertiary-fixed-dim": "#67efe0",
+              "error": "#b31b25",
+              "on-surface": "#212f45",
+              "secondary-fixed": "#ffc78e",
+              "error-container": "#fb5151",
+              "surface-container": "#dee8ff",
+              "on-tertiary-fixed": "#004c45",
+              "primary-fixed-dim": "#28c0e4",
+              "tertiary": "#00675f",
+              "on-tertiary-container": "#006058",
+              "surface-tint": "#006479",
+              "surface-container-low": "#ebf1ff",
+              "secondary-dim": "#744400",
+              "secondary-container": "#ffc78e",
+              "error-dim": "#9f0519",
+              "primary": "#006479",
+              "background": "#f4f6ff",
+              "surface": "#f4f6ff",
+              "on-error": "#ffefee",
+              "surface-container-highest": "#ccdeff",
+              "on-surface-variant": "#4e5c74",
+              "inverse-on-surface": "#8f9db8",
+              "surface-bright": "#f4f6ff",
+              "on-secondary-fixed-variant": "#764500",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#40cef3",
+              "inverse-primary": "#40cef3",
+              "on-tertiary-fixed-variant": "#006b63",
+              "inverse-surface": "#010e23",
+              "primary-dim": "#00576a",
+              "outline-variant": "#9faec9",
+              "surface-dim": "#bfd5fe",
+              "on-primary-fixed-variant": "#004a5a",
+              "on-background": "#212f45",
+              "on-secondary-container": "#693d00",
+              "on-error-container": "#570008",
+              "surface-container-high": "#d5e3ff",
+              "tertiary-container": "#77feee",
+              "secondary-fixed-dim": "#ffb462",
+              "on-secondary-fixed": "#4e2c00",
+              "on-secondary": "#fff0e5",
+              "on-primary-fixed": "#002a34",
+              "tertiary-dim": "#005a53",
+              "outline": "#697790",
+              "tertiary-fixed": "#77feee",
+              "on-tertiary": "#bffff5",
+              "surface-variant": "#ccdeff",
+              "primary-fixed": "#40cef3",
+              "on-primary": "#e0f6ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .organic-blob {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -4px rgba(33, 47, 69, 0.06);
+        }
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, #006479 0%, #40cef3 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center max-w-7xl mx-auto w-full bg-[#f4f6ff] dark:bg-slate-900 rounded-full mt-4 mx-4 px-6 py-3 shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)] font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-black text-[#006479] dark:text-[#40cef3]">Kinetic Playground</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#006479] dark:text-[#40cef3] border-b-4 border-[#40cef3] pb-1 transition-transform duration-300 hover:scale-105" href="#">Programs</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] transition-transform duration-300 hover:scale-105" href="#">Play-Hub</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] transition-transform duration-300 hover:scale-105" href="#">Parents</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] transition-transform duration-300 hover:scale-105" href="#">About Us</a>
+</div>
+<button class="btn-primary-gradient text-on-primary font-bold rounded-full px-8 py-3 transition-all duration-150 ease-in-out scale-100 hover:scale-105 active:scale-95 text-white">
+            Join Now
+        </button>
+</nav>
+<main class="max-w-7xl mx-auto px-6 pt-16">
+<!-- Hero Section -->
+<header class="text-center mb-20">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary mb-6 tracking-tight">
+                Adventure <span class="text-primary-container">Starts</span> Here
+            </h1>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto leading-relaxed">
+                Unlock your child's potential through our curated blend of physical play, scientific inquiry, and creative expression.
+            </p>
+</header>
+<!-- Filters Section -->
+<div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+<div class="flex flex-wrap justify-center gap-3">
+<button class="px-6 py-2 rounded-full bg-primary text-white font-semibold shadow-lg hover:shadow-xl transition-all">All Ages</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all">Tiny Tots (2-4)</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all">Little Explorers (5-7)</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all">Junior Aces (8-12)</button>
+</div>
+<div class="relative w-full md:w-auto">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full md:w-64 pl-12 pr-6 py-3 bg-surface-container-high rounded-full border-none focus:ring-2 focus:ring-primary-container focus:ring-opacity-50 text-on-surface placeholder-on-surface-variant/60" placeholder="Search programs..." type="text"/>
+</div>
+</div>
+<!-- Programs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Program Card 1: Creative Arts -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant children's art studio with messy paint palettes, colorful splatters, and young hands creating abstract finger paintings in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd3Xp3Mq231YIBVTgZO_EDi3Z8BPRfpWDoMAlqbaVAkODC9DY5fG645XDn107uI1Vtftyigz4HcXN51Xhzxi8x_gDQ4Z5JbaRqJPYJqvtkRJz54VdCSAfO9p4umgXCdp2N3AOjcqQDkA4xyqe-OPshmyjTEWaBfsfu2xGWpvmQvwebecTvAMh1yQ-rEAuCxiN15PTjL2ZY2LXrMEpfFQPgSR2fyMuCPu8BOfbaQ40aGce6GfSi6terwStBsDNHI0E4-e6Cbf6qx9F0"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold text-xs">Ages 4-10</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-secondary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="palette">palette</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Creative Arts</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Ignite imagination through multi-sensory painting, clay molding, and digital storytelling workshops.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program Card 2: Little Scientists -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500 lg:mt-8">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close-up of curious children wearing oversized safety goggles observing a colorful chemical reaction in a beaker with glowing bubbles and soft lab lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD29xf1aatWKaSqrN6sIwOPetScGjimaM_Nc5702q_Pyr27-k2PcKX-uWW1cACedOvoY6ZmCbx4zPnkZ-67dZ4d1Uter_MOmOP_V70AgZU5NmzxgrnMTfbDlRwSsPZmD4GqPA0Swjba8FpQFUbiicTmpG5a9jcSvQ4HfW3_CnMpckrex4S-vpG__FFnrkffaYocWRMFnUuVUwViELos_Mpx4ONLx4JdD2VSejU4dM5aIAleN5yGP9Fu8cZFx8nLjL7k2VQea-ZYfUcg"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-bold text-xs">Ages 6-12</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-tertiary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="science">science</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Little Scientists</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Hands-on experiments where bubbles, magnets, and simple machines bring the laws of physics to life.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program Card 3: Junior Athletes -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="blurred motion of active kids running through a sunny grass field with bright orange cones and a blue sky overhead during an outdoor sports session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkxckRKgJNct5eNu-S9HpOeJb59Xv6nWjyNjQmLCVNFO3o7dn8T6eFVKZrv6ZfeMmWiTxKj1ZYRMD7mlKXg-JwQEOzNMKUQUOAbO4fMJenU0UhRfjjPV7PEIC8jcit2MyD_9fFedBsD8DdVRQjhV-as2usPkSQyhzFEHqtntmRaJzTl4BHFlyKsaIAPhAKdeu8UHMNBFvdYOYgvt9vnonKALMWhSYvukxGprkvpdF9tQcFGR6fifCAMr2DFhACSVrirKOUykaMDwU-"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-bold text-xs">Ages 5-9</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-primary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="sports_soccer">sports_soccer</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Junior Athletes</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Dynamic obstacle courses and team games designed to build coordination, speed, and great sportsmanship.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program Card 4: Rhythm & Movement -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500 lg:mb-8">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="bright dance studio with polished wood floors reflecting soft morning light as colorful streamers hang from the ceiling in a playful atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbq2sb8C8luH3M9Wz8SKaSeYChEAS590vlqbIfNItT2GcK_JSFxFMHnyzg021C2Rt11LNnz2T8dsoSWAKhb4kTcMAXKY9yfqKXB8PBcmoRcxt5CWMl4pXtSkYx5peqPNwayDrIrtFzBGWRFhuPAeR9OstaRKlNm3opYOgx0UzbGIftNW5Drd0qqJcoefhIDMbdAngdb8w0FyAsJyo5D9deahrMTsgll78tRMpN8_k7dbgrfkonp-4-93M-cYzRJIq-DHIu7mV-tyS4"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold text-xs">Ages 2-5</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-secondary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="music_note">music_note</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Rhythm &amp; Movement</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">A joyful introduction to dance and music focusing on self-expression and basic motor skills development.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program Card 5: Nature Rangers -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="sun-drenched forest trail with lush ferns and ancient trees where children can explore biodiversity and the magic of the natural world" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH1e-yCT7qA531d7hsiWmqmmUzYD1zrqp3Hoix1HQHpA2ehNhcbAm4QrzueQiVK4PD0dSU5pQrkaeh92zOc18tFcWnqjeCAvZwp3Y1vfJu8JeApXh3QvPbatGVfQTbdYtPJ9Ns0hyhUREvoUv1FvPISm-9Lt1nTNEUI2Ira5Jv2QolknAyBVwLN56AbaVpURBKTXwYt_OY2ZVxph17_uLvuk_T6VhSLaywFps-Wf2cPxpxICiS0KM4JxZ49Xdd1iSvMSg1mFsHtql0"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-bold text-xs">Ages 7-12</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-tertiary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="park">park</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Nature Rangers</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Outdoor exploration identifying local flora, building bug hotels, and learning environmental stewardship.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program Card 6: Tech Tinkerers -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group hover:-translate-y-2 transition-transform duration-500 lg:mt-8">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="macro shot of bright plastic gears and electronic building blocks arranged on a white table with clean minimalist lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZFHbiF_z4xtbrI5JIGXkEyPn8zeFp3HmKyfAgTJlOCPQyEWcgCC9mWbCU4bZxXvHlgkjpAAw821Ndyzv7M-ymlRqTBSbidLLusDBjMP8q18sLN1BqRFpXlCWkcF5m_Yi9_fr3QwBFKv_tza_EIqjHnz-e10j9NRU5FkuWtyzTzwj2uUiiX7DdfI8LDje9TFy4UA5hiJxIa6VpspMkBBsE9G70WkwcOHkEdxl0cRADT5kWACIpO3vfptFHOUOTL_195Szu_d9iqcoL"/>
+<div class="absolute top-4 left-4">
+<span class="px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-bold text-xs">Ages 9-12</span>
+</div>
+</div>
+<div class="p-8">
+<div class="organic-blob w-12 h-12 bg-primary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Tech Tinkerers</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">Introduction to basic robotics and visual coding where kids build and program their own moving machines.</p>
+<button class="w-full py-4 px-6 rounded-xl font-bold border-2 border-primary-container text-primary hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured High-Energy Callout -->
+<section class="mt-24 bg-primary-container rounded-xl p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-headline text-4xl font-extrabold text-on-primary-container mb-6 leading-tight">Can't decide on just one? <br/>Try our Summer Pass!</h2>
+<p class="text-on-primary-container/80 text-lg mb-8">Get unlimited access to all weekly workshops and weekend special events for the entire summer season.</p>
+<button class="bg-primary text-white font-bold px-10 py-4 rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all">Grab Your Pass</button>
+</div>
+<div class="relative z-10 w-full md:w-1/3">
+<div class="bg-white/30 backdrop-blur-md rounded-xl p-6 ambient-shadow rotate-3 transform">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-primary" data-icon="confirmation_number">confirmation_number</span>
+</div>
+<div>
+<p class="font-bold text-on-primary-container">Ultimate Pass</p>
+<p class="text-xs text-on-primary-container/60">VALID JUN - AUG 2024</p>
+</div>
+</div>
+<div class="h-2 w-full bg-white/20 rounded-full mb-4"></div>
+<p class="text-2xl font-black text-on-primary-container">$299<span class="text-sm font-normal">/season</span></p>
+</div>
+</div>
+<!-- Decorative blobs -->
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-primary/10 organic-blob"></div>
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-white/10 organic-blob"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#ebf1ff] dark:bg-slate-950 rounded-t-[3rem] w-full mt-20 font-['Be_Vietnam_Pro'] text-sm">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div>
+<span class="text-xl font-bold text-[#006479] dark:text-[#40cef3] mb-4 block">Kinetic Playground</span>
+<p class="text-[#4e5c74] dark:text-slate-400 leading-relaxed">
+                    Nurturing the next generation of creators, thinkers, and movers through the power of play.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-[#006479] dark:text-[#40cef3] mb-2">Quick Explore</h4>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Terms of Play</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Contact Us</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Careers</a>
+</div>
+<div>
+<h4 class="font-bold text-[#006479] dark:text-[#40cef3] mb-4">Stay Playful</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-[#f4f6ff] flex items-center justify-center text-[#006479] hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span></a>
+<a class="w-10 h-10 rounded-full bg-[#f4f6ff] flex items-center justify-center text-[#006479] hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" data-icon="camera">camera</span></a>
+<a class="w-10 h-10 rounded-full bg-[#f4f6ff] flex items-center justify-center text-[#006479] hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" data-icon="play_circle">play_circle</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pb-12">
+<div class="border-t border-primary/10 pt-8 text-center text-[#4e5c74] dark:text-slate-400">
+                © 2024 Kinetic Playground. All rights reserved.
+            </div>
+</div>
+</footer>
+<!-- FAB for quick booking -->
+<button class="fixed bottom-8 right-8 w-16 h-16 btn-primary-gradient text-white rounded-full shadow-2xl flex items-center justify-center z-50 hover:scale-110 active:scale-95 transition-transform group">
+<span class="material-symbols-outlined text-3xl" data-icon="event">event</span>
+<span class="absolute right-20 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Book a Session</span>
+</button>
+</body></html>

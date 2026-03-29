@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#00414f",
+              "secondary": "#854f00",
+              "tertiary-fixed-dim": "#67efe0",
+              "error": "#b31b25",
+              "on-surface": "#212f45",
+              "secondary-fixed": "#ffc78e",
+              "error-container": "#fb5151",
+              "surface-container": "#dee8ff",
+              "on-tertiary-fixed": "#004c45",
+              "primary-fixed-dim": "#28c0e4",
+              "tertiary": "#00675f",
+              "on-tertiary-container": "#006058",
+              "surface-tint": "#006479",
+              "surface-container-low": "#ebf1ff",
+              "secondary-dim": "#744400",
+              "secondary-container": "#ffc78e",
+              "error-dim": "#9f0519",
+              "primary": "#006479",
+              "background": "#f4f6ff",
+              "surface": "#f4f6ff",
+              "on-error": "#ffefee",
+              "surface-container-highest": "#ccdeff",
+              "on-surface-variant": "#4e5c74",
+              "inverse-on-surface": "#8f9db8",
+              "surface-bright": "#f4f6ff",
+              "on-secondary-fixed-variant": "#764500",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#40cef3",
+              "inverse-primary": "#40cef3",
+              "on-tertiary-fixed-variant": "#006b63",
+              "inverse-surface": "#010e23",
+              "primary-dim": "#00576a",
+              "outline-variant": "#9faec9",
+              "surface-dim": "#bfd5fe",
+              "on-primary-fixed-variant": "#004a5a",
+              "on-background": "#212f45",
+              "on-secondary-container": "#693d00",
+              "on-error-container": "#570008",
+              "surface-container-high": "#d5e3ff",
+              "tertiary-container": "#77feee",
+              "secondary-fixed-dim": "#ffb462",
+              "on-secondary-fixed": "#4e2c00",
+              "on-secondary": "#fff0e5",
+              "on-primary-fixed": "#002a34",
+              "tertiary-dim": "#005a53",
+              "outline": "#697790",
+              "tertiary-fixed": "#77feee",
+              "on-tertiary": "#bffff5",
+              "surface-variant": "#ccdeff",
+              "primary-fixed": "#40cef3",
+              "on-primary": "#e0f6ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blob-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center max-w-7xl mx-auto w-full rounded-full mt-4 mx-4 px-6 py-3 bg-[#f4f6ff] dark:bg-slate-900 shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)]">
+<div class="text-2xl font-black text-[#006479] dark:text-[#40cef3] font-headline tracking-tight">Kinetic Playground</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#4e5c74] dark:text-slate-400 hover:scale-105 transition-transform duration-300 hover:text-[#006479] font-bold" href="#">Programs</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:scale-105 transition-transform duration-300 hover:text-[#006479] font-bold" href="#">Play-Hub</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:scale-105 transition-transform duration-300 hover:text-[#006479] font-bold" href="#">Parents</a>
+<a class="text-[#4e5c74] dark:text-slate-400 hover:scale-105 transition-transform duration-300 hover:text-[#006479] font-bold" href="#">About Us</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-8 py-3 rounded-full hover:scale-105 transition-transform duration-300 shadow-lg">
+            Join Now
+        </button>
+</nav>
+<main class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+<!-- Hero Section -->
+<section class="text-center mb-20">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6">
+                Let's <span class="text-primary-fixed-dim">Play</span> Together
+            </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto">
+                Ready to jump into the fun? Whether you're signing up for a season of play or just have a quick question, we're all ears!
+            </p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)]">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-headline font-bold text-on-surface-variant ml-2">Parent's Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary-fixed/50 placeholder:text-outline" placeholder="Sarah Jenkins" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-headline font-bold text-on-surface-variant ml-2">Kiddo's Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary-fixed/50 placeholder:text-outline" placeholder="Little Explorer" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-headline font-bold text-on-surface-variant ml-2">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary-fixed/50 placeholder:text-outline" placeholder="hello@playhouse.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-headline font-bold text-on-surface-variant ml-2">How can we help?</label>
+<select class="w-auto bg-surface-container-high border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary-fixed/50 text-on-surface-variant appearance-none">
+<option>Signing up for a program</option>
+<option>Asking a question</option>
+<option>Scheduling a tour</option>
+<option>Just saying hi!</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-headline font-bold text-on-surface-variant ml-2">Your Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-3xl px-6 py-4 focus:ring-2 focus:ring-primary-fixed/50 placeholder:text-outline" placeholder="Tell us what's on your mind..." rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto bg-gradient-to-br from-primary to-primary-container text-on-primary font-extrabold text-xl px-12 py-5 rounded-full hover:scale-105 transition-transform duration-300 shadow-xl flex items-center justify-center gap-3" type="submit">
+                        Send to the Play-Hub
+                        <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</form>
+</div>
+<!-- Right Column: Info & Map -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Contact Info Cards -->
+<div class="bg-primary-container text-on-primary-container p-8 rounded-xl shadow-lg relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-4">Visit the Playground</h3>
+<p class="mb-6 opacity-90 leading-relaxed">123 Energy Lane,<br/>Brighton Heights, BH 90210</p>
+<div class="flex items-center gap-4 mb-4">
+<div class="bg-surface-container-lowest/30 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<span class="font-bold">555-PLAY-NOW</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-lowest/30 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<span class="font-bold">play@kineticplayground.com</span>
+</div>
+</div>
+<!-- Decorative blob -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-on-primary-container/10 rounded-full blur-3xl"></div>
+</div>
+<!-- Map Section -->
+<div class="rounded-xl overflow-hidden shadow-lg h-80 relative">
+<img class="w-full h-full object-cover" data-alt="stylized map view of an urban neighborhood with a bright teal marker showing the location of a colorful playground" data-location="Brighton Heights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCct2mlGbZQxhSi1Qr3D-oiZ5s-g0kG3n9i-cZgeEqP2tQ47sXbRZ-1HHR6vIlBCD4iEsdqsAJZqiB0DtqkKzQgQ1F3CkmVxbpko46ukedx5TlOhSN8r-AaPOyVy8wS8GtMRPRjx9Huz2A24NYLAdtzQgwSKt8CvwK6-NjPty6QW9V5xBIfbcTYzUkeT1eKcXb3Msgw0LAP-Yx-bwSjSCNqXbaXpeL5Lnp-0nNBpNKPobX93RELWnO1LYii78m2KhdVU7p4aCKIYJdl"/>
+<div class="absolute bottom-4 left-4 glass-panel px-4 py-2 rounded-full flex items-center gap-2 border border-white/20">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="text-sm font-bold">Open Today: 8am - 6pm</span>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex justify-between items-center p-6 bg-surface-container-low rounded-xl">
+<span class="font-headline font-bold text-on-surface-variant">Follow the Fun</span>
+<div class="flex gap-4">
+<a class="w-12 h-12 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm text-primary hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm text-primary hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="video_library">video_library</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm text-primary hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Section -->
+<section class="mt-32">
+<div class="text-center mb-12">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4">Common Questions</h2>
+<div class="h-2 w-24 bg-primary-container mx-auto rounded-full"></div>
+</div>
+<div class="max-w-4xl mx-auto space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm group">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline font-bold text-lg text-on-surface">What age groups do you cater to?</h4>
+<div class="blob-shape bg-surface-container-high w-10 h-10 flex items-center justify-center text-primary group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm group">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline font-bold text-lg text-on-surface">Can we book a birthday party here?</h4>
+<div class="blob-shape bg-surface-container-high w-10 h-10 flex items-center justify-center text-primary group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined" data-icon="cake">cake</span>
+</div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm group">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline font-bold text-lg text-on-surface">Is there an area for parents to work?</h4>
+<div class="blob-shape bg-surface-container-high w-10 h-10 flex items-center justify-center text-primary group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined" data-icon="coffee">coffee</span>
+</div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm group">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="font-headline font-bold text-lg text-on-surface">What safety measures are in place?</h4>
+<div class="blob-shape bg-surface-container-high w-10 h-10 flex items-center justify-center text-primary group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-[#ebf1ff] dark:bg-slate-950 rounded-t-[3rem] w-full mt-20">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-bold text-[#006479] dark:text-[#40cef3] font-headline">Kinetic Playground</div>
+<p class="text-[#4e5c74] dark:text-slate-400 font-body text-sm leading-relaxed">
+                    Building a world where movement meets imagination. Join our community of explorers today.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-[#006479] dark:text-[#40cef3]">Play Links</h5>
+<a class="text-[#4e5c74] dark:text-slate-400 font-body text-sm hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#4e5c74] dark:text-slate-400 font-body text-sm hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Terms of Play</a>
+<a class="text-[#4e5c74] dark:text-slate-400 font-body text-sm hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Contact Us</a>
+<a class="text-[#4e5c74] dark:text-slate-400 font-body text-sm hover:text-[#006479] dark:hover:text-[#40cef3] transition-colors" href="#">Careers</a>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-[#006479] dark:text-[#40cef3]">Stay in the Loop</h5>
+<div class="flex rounded-full bg-surface-container overflow-hidden">
+<input class="bg-transparent border-none px-4 py-2 w-full text-sm focus:ring-0 placeholder:text-outline" placeholder="Your email" type="text"/>
+<button class="bg-primary text-on-primary px-4 py-2">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<div class="text-xs text-[#4e5c74] dark:text-slate-400 font-body">© 2024 Kinetic Playground. All rights reserved.</div>
+</div>
+</div>
+</footer>
+</body></html>

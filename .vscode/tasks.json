@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "WP: Start",
+      "type": "shell",
+      "command": "docker compose up -d",
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "WP: Stop",
+      "type": "shell",
+      "command": "docker compose down",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "WP: Restart",
+      "type": "shell",
+      "command": "docker compose restart wordpress",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "WP: Logs",
+      "type": "shell",
+      "command": "docker compose logs -f",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "WP: Stop and wipe data",
+      "type": "shell",
+      "command": "docker compose down -v",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    }
+  ]
+}
