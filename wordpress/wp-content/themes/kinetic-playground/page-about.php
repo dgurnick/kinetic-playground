@@ -5,12 +5,12 @@ get_header(); ?>
 
     <!-- Hero Section -->
     <section class="relative pt-20 pb-12 text-center">
-        <div class="inline-block px-6 py-2 bg-surface-container-high text-primary rounded-full font-bold text-sm mb-6">BEHIND THE MAGIC</div>
+        <div class="inline-block px-6 py-2 bg-surface-container-high text-primary rounded-full font-bold text-sm mb-6"><?php echo esc_html( kp_t( 'about_badge' ) ); ?></div>
         <h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-on-surface mb-8">
-            Where Play Meets <br/>
-            <span style="background: linear-gradient(135deg, #006479, #40cef3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Pure Possibility</span>
+            <?php echo esc_html( kp_t( 'about_h1_1' ) ); ?> <br/>
+            <span style="background: linear-gradient(135deg, #006479, #40cef3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><?php echo esc_html( kp_t( 'about_h1_2' ) ); ?></span>
         </h1>
-        <p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">We're not just building a playground; we're architecting a future where every child moves with confidence, curiosity, and joy.</p>
+        <p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed"><?php echo esc_html( kp_t( 'about_subtitle' ) ); ?></p>
         <div class="absolute top-1/4 -left-20 w-64 h-64 bg-primary-container/20 blur-3xl rounded-full -z-10"></div>
         <div class="absolute bottom-0 -right-20 w-80 h-80 bg-secondary-container/20 blur-3xl rounded-full -z-10"></div>
     </section>
@@ -27,15 +27,15 @@ get_header(); ?>
                 </div>
             </div>
             <div class="space-y-8">
-                <h2 class="text-4xl font-headline font-bold text-on-surface">Our Story: Born in Motion</h2>
+                <h2 class="text-4xl font-headline font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_story_title' ) ); ?></h2>
                 <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-                    <p>Kinetic Playground started with a simple observation: children's natural instinct to move was being boxed into rigid, static learning environments. We wanted to break those boxes open.</p>
-                    <p>Founded by a team of pediatric movement specialists and experience designers, we created a sanctuary where kinetic energy is the primary currency of learning. We believe that when a body is in motion, the mind follows in spectacular directions.</p>
+                    <p><?php echo esc_html( kp_t( 'about_story_p1' ) ); ?></p>
+                    <p><?php echo esc_html( kp_t( 'about_story_p2' ) ); ?></p>
                     <div class="flex items-center gap-4 pt-4">
                         <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
                             <span class="material-symbols-outlined">star</span>
                         </div>
-                        <span class="font-bold text-on-surface">Trusted by 5,000+ active families</span>
+                        <span class="font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_story_stat' ) ); ?></span>
                     </div>
                 </div>
             </div>
@@ -45,14 +45,14 @@ get_header(); ?>
     <!-- Our Philosophy Bento Grid -->
     <section class="py-20">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Our Philosophy</h2>
-            <p class="text-on-surface-variant">The core values that keep us moving forward.</p>
+            <h2 class="text-4xl font-headline font-bold text-on-surface mb-4"><?php echo esc_html( kp_t( 'about_philosophy_title' ) ); ?></h2>
+            <p class="text-on-surface-variant"><?php echo esc_html( kp_t( 'about_philosophy_sub' ) ); ?></p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="md:col-span-2 bg-primary-container p-10 rounded-xl relative overflow-hidden group">
                 <div class="relative z-10">
-                    <h3 class="text-3xl font-headline font-bold text-on-primary-container mb-4">Movement as Literacy</h3>
-                    <p class="text-on-primary-container/80 text-lg max-w-md">We teach children to read their own bodies. Every jump, roll, and reach is a syllable in the language of physical confidence.</p>
+                    <h3 class="text-3xl font-headline font-bold text-on-primary-container mb-4"><?php echo esc_html( kp_t( 'about_p1_title' ) ); ?></h3>
+                    <p class="text-on-primary-container/80 text-lg max-w-md"><?php echo esc_html( kp_t( 'about_p1_desc' ) ); ?></p>
                 </div>
                 <span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] text-on-primary-container/10 group-hover:scale-110 transition-transform duration-700">directions_run</span>
             </div>
@@ -61,18 +61,18 @@ get_header(); ?>
                     <span class="material-symbols-outlined text-3xl">shield_with_heart</span>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Radical Safety</h3>
-                    <p class="text-on-surface-variant">Soft surfaces, rigorous oversight, and an environment engineered for risk-taking without the bruises.</p>
+                <h3 class="text-2xl font-headline font-bold text-on-surface mb-2"><?php echo esc_html( kp_t( 'about_p2_title' ) ); ?></h3>
+                <p class="text-on-surface-variant"><?php echo esc_html( kp_t( 'about_p2_desc' ) ); ?></p>
                 </div>
             </div>
             <div class="bg-tertiary-container p-10 rounded-xl">
-                <h3 class="text-2xl font-headline font-bold text-on-tertiary-container mb-4">Zero-Boredom Policy</h3>
-                <p class="text-on-tertiary-container/80">If it's not fun, it's not Kinetic. We pivot and adapt our programming to the energy in the room.</p>
+                <h3 class="text-2xl font-headline font-bold text-on-tertiary-container mb-4"><?php echo esc_html( kp_t( 'about_p3_title' ) ); ?></h3>
+                <p class="text-on-tertiary-container/80"><?php echo esc_html( kp_t( 'about_p3_desc' ) ); ?></p>
             </div>
             <div class="md:col-span-2 bg-surface-container-lowest border border-outline-variant/15 p-10 rounded-xl flex items-center gap-10 shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)]">
                 <div class="flex-1">
-                    <h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Continuous Discovery</h3>
-                    <p class="text-on-surface-variant">We update our playground modules every month. New challenges, new textures, and new ways to play mean the adventure never ends.</p>
+                    <h3 class="text-2xl font-headline font-bold text-on-surface mb-4"><?php echo esc_html( kp_t( 'about_p4_title' ) ); ?></h3>
+                    <p class="text-on-surface-variant"><?php echo esc_html( kp_t( 'about_p4_desc' ) ); ?></p>
                 </div>
                 <div class="hidden md:block w-32 h-32 bg-primary organic-blob flex-shrink-0 opacity-20"></div>
             </div>
@@ -82,8 +82,8 @@ get_header(); ?>
     <!-- Meet the Team -->
     <section class="py-20">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Meet the Play-Makers</h2>
-            <p class="text-on-surface-variant">The experts, dreamers, and big kids who run the show.</p>
+            <h2 class="text-4xl font-headline font-bold text-on-surface mb-4"><?php echo esc_html( kp_t( 'about_team_title' ) ); ?></h2>
+            <p class="text-on-surface-variant"><?php echo esc_html( kp_t( 'about_team_sub' ) ); ?></p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Dr. Sarah Chen -->
@@ -96,8 +96,8 @@ get_header(); ?>
                         <span class="material-symbols-outlined text-sm">sports_gymnastics</span>
                     </div>
                 </div>
-                <h4 class="text-xl font-headline font-bold text-on-surface">Dr. Sarah Chen</h4>
-                <p class="text-primary font-medium text-sm">Founder &amp; Lead Scientist</p>
+                <h4 class="text-xl font-headline font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_team1_name' ) ); ?></h4>
+                <p class="text-primary font-medium text-sm"><?php echo kp_t( 'about_team1_role' ); ?></p>
             </div>
             <!-- Coach Mike Rossi -->
             <div class="group mt-8 lg:mt-0">
@@ -109,8 +109,8 @@ get_header(); ?>
                         <span class="material-symbols-outlined text-sm">skateboarding</span>
                     </div>
                 </div>
-                <h4 class="text-xl font-headline font-bold text-on-surface">Coach Mike Rossi</h4>
-                <p class="text-primary font-medium text-sm">Head of Play Design</p>
+                <h4 class="text-xl font-headline font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_team2_name' ) ); ?></h4>
+                <p class="text-primary font-medium text-sm"><?php echo esc_html( kp_t( 'about_team2_role' ) ); ?></p>
             </div>
             <!-- Aisha Ibrahim -->
             <div class="group">
@@ -122,8 +122,8 @@ get_header(); ?>
                         <span class="material-symbols-outlined text-sm">psychology</span>
                     </div>
                 </div>
-                <h4 class="text-xl font-headline font-bold text-on-surface">Aisha Ibrahim</h4>
-                <p class="text-primary font-medium text-sm">Experience Architect</p>
+                <h4 class="text-xl font-headline font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_team3_name' ) ); ?></h4>
+                <p class="text-primary font-medium text-sm"><?php echo esc_html( kp_t( 'about_team3_role' ) ); ?></p>
             </div>
             <!-- Leo Martinez -->
             <div class="group mt-8 lg:mt-0">
@@ -135,8 +135,8 @@ get_header(); ?>
                         <span class="material-symbols-outlined text-sm">health_and_safety</span>
                     </div>
                 </div>
-                <h4 class="text-xl font-headline font-bold text-on-surface">Leo Martinez</h4>
-                <p class="text-primary font-medium text-sm">Safety Specialist</p>
+                <h4 class="text-xl font-headline font-bold text-on-surface"><?php echo esc_html( kp_t( 'about_team4_name' ) ); ?></h4>
+                <p class="text-primary font-medium text-sm"><?php echo esc_html( kp_t( 'about_team4_role' ) ); ?></p>
             </div>
         </div>
     </section>
@@ -144,11 +144,11 @@ get_header(); ?>
     <!-- CTA Section -->
     <section class="my-20 bg-surface-container-low rounded-xl p-12 text-center relative overflow-hidden">
         <div class="relative z-10">
-            <h2 class="text-4xl font-headline font-bold text-on-surface mb-6">Ready to join the movement?</h2>
-            <p class="text-on-surface-variant mb-10 text-lg max-w-xl mx-auto">Visit our hub and see the playground in action. Your first session is always on us.</p>
+            <h2 class="text-4xl font-headline font-bold text-on-surface mb-6"><?php echo esc_html( kp_t( 'about_cta_title' ) ); ?></h2>
+            <p class="text-on-surface-variant mb-10 text-lg max-w-xl mx-auto"><?php echo esc_html( kp_t( 'about_cta_desc' ) ); ?></p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="<?php echo esc_url( home_url( '/join' ) ); ?>" class="bg-gradient-to-br from-primary to-primary-fixed text-on-primary px-10 py-4 rounded-full font-headline font-bold shadow-xl hover:scale-105 transition-all text-center">Book a Free Tour</a>
-                <a href="<?php echo esc_url( home_url( '/join' ) ); ?>" class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-headline font-bold border border-outline-variant/20 hover:bg-surface transition-colors text-center">Contact Us</a>
+                <a href="<?php echo esc_url( kp_url( '/join' ) ); ?>" class="bg-gradient-to-br from-primary to-primary-fixed text-on-primary px-10 py-4 rounded-full font-headline font-bold shadow-xl hover:scale-105 transition-all text-center"><?php echo esc_html( kp_t( 'about_cta1' ) ); ?></a>
+                <a href="<?php echo esc_url( kp_url( '/join' ) ); ?>" class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-headline font-bold border border-outline-variant/20 hover:bg-surface transition-colors text-center"><?php echo esc_html( kp_t( 'about_cta2' ) ); ?></a>
             </div>
         </div>
         <div class="absolute top-0 left-0 w-64 h-64 bg-primary-container/20 organic-blob -translate-x-1/2 -translate-y-1/2"></div>

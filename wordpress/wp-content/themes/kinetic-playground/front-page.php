@@ -4,19 +4,19 @@
     <section class="relative px-6 pt-16 pb-24 overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="z-10 text-center lg:text-left">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-highest text-primary font-bold text-sm mb-6">WHERE ENERGY MEETS IMAGINATION</span>
+                <span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-highest text-primary font-bold text-sm mb-6"><?php echo esc_html( kp_t( 'home_badge' ) ); ?></span>
                 <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
-                    The World is Your <span class="text-primary italic">Kinetic</span> Playground
+                    <?php echo esc_html( kp_t( 'home_h1_1' ) ); ?> <span class="text-primary italic">Kinetic</span> <?php echo esc_html( kp_t( 'home_h1_2' ) ); ?>
                 </h1>
                 <p class="text-lg md:text-xl text-on-surface-variant mb-10 max-w-xl mx-auto lg:mx-0">
-                    Nurturing curiosity through active play, messy art, and joyful noise. Discover a sanctuary designed for every child's unique spark.
+                    <?php echo esc_html( kp_t( 'home_subtitle' ) ); ?>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="<?php echo esc_url( home_url( '/activities' ) ); ?>" class="bg-gradient-to-br from-primary to-primary-fixed text-on-primary text-lg px-10 py-5 rounded-full font-headline font-bold shadow-[0_20px_40px_-10px_rgba(0,100,121,0.3)] hover:scale-105 transition-transform active:scale-95 text-center">
-                        Start Exploring
+                    <a href="<?php echo esc_url( kp_url( '/activities' ) ); ?>" class="bg-gradient-to-br from-primary to-primary-fixed text-on-primary text-lg px-10 py-5 rounded-full font-headline font-bold shadow-[0_20px_40px_-10px_rgba(0,100,121,0.3)] hover:scale-105 transition-transform active:scale-95 text-center">
+                        <?php echo esc_html( kp_t( 'home_cta1' ) ); ?>
                     </a>
-                    <a href="<?php echo esc_url( home_url( '/join' ) ); ?>" class="bg-surface-container-lowest text-on-surface text-lg px-10 py-5 rounded-full font-headline font-bold shadow-sm hover:bg-surface-container-low transition-colors active:scale-95 text-center">
-                        View Schedule
+                    <a href="<?php echo esc_url( kp_url( '/join' ) ); ?>" class="bg-surface-container-lowest text-on-surface text-lg px-10 py-5 rounded-full font-headline font-bold shadow-sm hover:bg-surface-container-low transition-colors active:scale-95 text-center">
+                        <?php echo esc_html( kp_t( 'home_cta2' ) ); ?>
                     </a>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                         <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
                         <span class="font-bold text-on-surface">500+</span>
                     </div>
-                    <p class="text-sm text-on-surface-variant">Happy little explorers joined this month!</p>
+                    <p class="text-sm text-on-surface-variant"><?php echo esc_html( kp_t( 'home_stat_text' ) ); ?></p>
                 </div>
             </div>
         </div>
@@ -41,8 +41,8 @@
     <section class="py-24 bg-surface-container-low">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4">Choose Your Adventure</h2>
-                <p class="text-on-surface-variant max-w-2xl mx-auto">From messy fingers to high-octane sprints, we have a specialized zone for every kind of play.</p>
+                <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4"><?php echo esc_html( kp_t( 'home_activities_title' ) ); ?></h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto"><?php echo esc_html( kp_t( 'home_activities_sub' ) ); ?></p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
                 <!-- Art Zone -->
@@ -53,8 +53,8 @@
                         <div class="organic-blob bg-secondary w-12 h-12 flex items-center justify-center mb-4">
                             <span class="material-symbols-outlined text-white">palette</span>
                         </div>
-                        <h3 class="font-headline text-3xl font-bold text-white mb-2">Messy Art Studio</h3>
-                        <p class="text-white/90 max-w-sm">Unleash inner Picassos with finger painting, clay sculpting, and giant murals.</p>
+                        <h3 class="font-headline text-3xl font-bold text-white mb-2"><?php echo esc_html( kp_t( 'home_art_title' ) ); ?></h3>
+                        <p class="text-white/90 max-w-sm"><?php echo esc_html( kp_t( 'home_art_desc' ) ); ?></p>
                     </div>
                 </div>
                 <!-- Music Zone -->
@@ -65,8 +65,8 @@
                         <div class="organic-blob bg-primary-container w-10 h-10 flex items-center justify-center mb-4">
                             <span class="material-symbols-outlined text-on-primary-container">music_note</span>
                         </div>
-                        <h3 class="font-headline text-2xl font-bold text-white mb-2">Music &amp; Beats</h3>
-                        <p class="text-white/90">Feel the rhythm with drums, bells, and dance-alongs.</p>
+                        <h3 class="font-headline text-2xl font-bold text-white mb-2"><?php echo kp_t( 'home_music_title' ); ?></h3>
+                        <p class="text-white/90"><?php echo esc_html( kp_t( 'home_music_desc' ) ); ?></p>
                     </div>
                 </div>
                 <!-- Sports Zone -->
@@ -77,16 +77,16 @@
                         <div class="organic-blob bg-tertiary-container w-10 h-10 flex items-center justify-center mb-4">
                             <span class="material-symbols-outlined text-on-tertiary-container">sports_soccer</span>
                         </div>
-                        <h3 class="font-headline text-2xl font-bold text-white mb-2">Kinetic Sports</h3>
-                        <p class="text-white/90">Obstacle courses, mini-soccer, and active games.</p>
+                        <h3 class="font-headline text-2xl font-bold text-white mb-2"><?php echo esc_html( kp_t( 'home_sports_title' ) ); ?></h3>
+                        <p class="text-white/90"><?php echo esc_html( kp_t( 'home_sports_desc' ) ); ?></p>
                     </div>
                 </div>
                 <!-- Hub Link -->
                 <div class="md:col-span-8 flex flex-col justify-center items-center bg-surface-container-highest rounded-xl p-8 border-4 border-dashed border-outline-variant/20">
-                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-4">Want more variety?</h3>
-                    <p class="text-on-surface-variant mb-6 text-center">We offer over 15 different program tracks for various age groups.</p>
-                    <a href="<?php echo esc_url( home_url( '/activities' ) ); ?>" class="flex items-center gap-2 font-headline font-extrabold text-primary hover:gap-4 transition-all">
-                        Browse All Programs
+                    <h3 class="font-headline text-2xl font-bold text-on-surface mb-4"><?php echo esc_html( kp_t( 'home_more_title' ) ); ?></h3>
+                    <p class="text-on-surface-variant mb-6 text-center"><?php echo esc_html( kp_t( 'home_more_desc' ) ); ?></p>
+                    <a href="<?php echo esc_url( kp_url( '/activities' ) ); ?>" class="flex items-center gap-2 font-headline font-extrabold text-primary hover:gap-4 transition-all">
+                        <?php echo esc_html( kp_t( 'home_browse' ) ); ?>
                         <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
@@ -106,30 +106,30 @@
                 </div>
             </div>
             <div>
-                <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-12">What Our Tribe Says</h2>
+                <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-12"><?php echo esc_html( kp_t( 'home_testimonials_title' ) ); ?></h2>
                 <div class="space-y-8">
                     <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)] relative ml-0 md:-ml-20">
                         <span class="material-symbols-outlined text-primary-container text-5xl absolute -top-4 -left-4">format_quote</span>
-                        <p class="text-lg text-on-surface italic mb-6">"My daughter used to be so shy. Since starting the Music &amp; Beats class, she's come home singing and dancing. Kinetic Playground isn't just a gym; it's a confidence builder."</p>
+                        <p class="text-lg text-on-surface italic mb-6"><?php echo kp_t( 'home_testimonial1' ); ?></p>
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOJRjSWkFR3eu0P182mKERUu83C9ODTjD8SBQryXmnDomQDW6yOQVK1LjxhiwbzL2clzKkj4tXRLPQXTjI4Zy5F60Vz0cIKsAHwc4XtzXFw_bVBWzpSO3kIc8ZUUY7KzL5kzU-o-9X0wyJSmos4tbGfCR77qbkVCVRPE4mcF8cp35KQDszCTXwS0AaGZ7jminVuEzwoBTOO9v09eCUSNCPJVtCg9FxhODf3gTBU_-FN9A-8Usb4jK4Puvbvf35xVT_FR9w8kEH0eY" alt="Sarah J." class="w-full h-full object-cover" />
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOJRjSWkFR3eu0P182mKERUu83C9ODTjD8SBQryXmnDomQDW6yOQVK1LjxhiwbzL2clzKkj4tXRLPQXTjI4Zy5F60Vz0cIKsAHwc4XtzXFw_bVBWzpSO3kIc8ZUUY7KzL5kzU-o-9X0wyJSmos4tbGfCR77qbkVCVRPE4mcF8cp35KQDszCTXwS0AaGZ7jminVuEzwoBTOO9v09eCUSNCPJVtCg9FxhODf3gTBU_-FN9A-8Usb4jK4Puvbvf35xVT_FR9w8kEH0eY" alt="<?php echo esc_attr( kp_t( 'home_testimonial1_name' ) ); ?>" class="w-full h-full object-cover" />
                             </div>
                             <div>
-                                <p class="font-bold text-on-surface">Sarah J.</p>
-                                <p class="text-sm text-on-surface-variant">Mother of Lily (4)</p>
+                                <p class="font-bold text-on-surface"><?php echo esc_html( kp_t( 'home_testimonial1_name' ) ); ?></p>
+                                <p class="text-sm text-on-surface-variant"><?php echo esc_html( kp_t( 'home_testimonial1_role' ) ); ?></p>
                             </div>
                         </div>
                     </div>
                     <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_32px_64px_-4px_rgba(33,47,69,0.06)] relative md:ml-12">
-                        <p class="text-lg text-on-surface italic mb-6">"Finally, a place where 'messy' is encouraged! The staff is incredible and the environment is so safe. My son asks to come here every single morning."</p>
+                        <p class="text-lg text-on-surface italic mb-6"><?php echo kp_t( 'home_testimonial2' ); ?></p>
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmhyteWxc5gdAhOvIivFFmn_S34RfZTFvgoyanOkdtS4GXIYrHpokIIeb4WH49YHZhNHDepjeSnWxtu5VE_OtHB5USgCdUj_85Ypse_iD9m8QHi9t57u3SPID_TyOOvip-HAxJEcv3NdunBibuvrH1Fpo6zRCfMMJGNRv8Jst3DtgbAsQzcgSMw3gPvifYOlgOq7EgWz6ikAPVOhLisdsJZrlvYSJliRI20KwOYKfJfuiRxPND0svHu1nG_CCpC30ezlxA9ENvQex" alt="Mark T." class="w-full h-full object-cover" />
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmhyteWxc5gdAhOvIivFFmn_S34RfZTFvgoyanOkdtS4GXIYrHpokIIeb4WH49YHZhNHDepjeSnWxtu5VE_OtHB5USgCdUj_85Ypse_iD9m8QHi9t57u3SPID_TyOOvip-HAxJEcv3NdunBibuvrH1Fpo6zRCfMMJGNRv8Jst3DtgbAsQzcgSMw3gPvifYOlgOq7EgWz6ikAPVOhLisdsJZrlvYSJliRI20KwOYKfJfuiRxPND0svHu1nG_CCpC30ezlxA9ENvQex" alt="<?php echo esc_attr( kp_t( 'home_testimonial2_name' ) ); ?>" class="w-full h-full object-cover" />
                             </div>
                             <div>
-                                <p class="font-bold text-on-surface">Mark T.</p>
-                                <p class="text-sm text-on-surface-variant">Father of Leo (6)</p>
+                                <p class="font-bold text-on-surface"><?php echo esc_html( kp_t( 'home_testimonial2_name' ) ); ?></p>
+                                <p class="text-sm text-on-surface-variant"><?php echo esc_html( kp_t( 'home_testimonial2_role' ) ); ?></p>
                             </div>
                         </div>
                     </div>
@@ -143,18 +143,18 @@
         <div class="bg-primary-container rounded-xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative shadow-2xl">
             <div class="absolute top-0 right-0 w-64 h-64 bg-white/20 organic-blob -translate-y-1/2 translate-x-1/4"></div>
             <div class="relative z-10 max-w-xl">
-                <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-primary-container mb-4">Stay in the Loop</h2>
-                <p class="text-on-primary-container/80 text-lg">Get play tips, event invites, and early access to summer camp registrations delivered to your inbox.</p>
+                <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-primary-container mb-4"><?php echo esc_html( kp_t( 'home_newsletter_title' ) ); ?></h2>
+                <p class="text-on-primary-container/80 text-lg"><?php echo esc_html( kp_t( 'home_newsletter_desc' ) ); ?></p>
             </div>
             <div class="w-full md:w-auto relative z-10">
                 <form class="flex flex-col sm:flex-row gap-3" method="post">
                     <?php wp_nonce_field( 'newsletter_signup', 'newsletter_nonce' ); ?>
-                    <input type="email" name="newsletter_email" class="bg-surface-container-lowest border-none rounded-full px-8 py-4 w-full sm:w-80 focus:ring-2 focus:ring-primary/20 placeholder:text-on-surface-variant" placeholder="Your email address" required />
+                    <input type="email" name="newsletter_email" class="bg-surface-container-lowest border-none rounded-full px-8 py-4 w-full sm:w-80 focus:ring-2 focus:ring-primary/20 placeholder:text-on-surface-variant" placeholder="<?php echo esc_attr( kp_t( 'home_newsletter_placeholder' ) ); ?>" required />
                     <button type="submit" class="bg-primary text-white font-headline font-bold px-8 py-4 rounded-full shadow-lg hover:bg-primary-dim transition-colors">
-                        Sign Me Up!
+                        <?php echo esc_html( kp_t( 'home_newsletter_btn' ) ); ?>
                     </button>
                 </form>
-                <p class="text-xs text-on-primary-container/60 mt-4 text-center sm:text-left">We promise no spam, only play!</p>
+                <p class="text-xs text-on-primary-container/60 mt-4 text-center sm:text-left"><?php echo esc_html( kp_t( 'home_newsletter_note' ) ); ?></p>
             </div>
         </div>
     </section>

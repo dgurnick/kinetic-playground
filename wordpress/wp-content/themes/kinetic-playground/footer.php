@@ -3,24 +3,24 @@
     <div class="flex flex-col gap-4">
         <span class="text-xl font-bold text-[#006479] font-headline"><?php bloginfo( 'name' ); ?></span>
         <p class="text-[#4e5c74] font-body text-sm leading-relaxed max-w-xs">
-            Creating vibrant spaces where children learn through movement and creativity. Join our community of little explorers.
+            <?php echo esc_html( kp_t( 'footer_tagline' ) ); ?>
         </p>
-        <p class="text-[#4e5c74] font-body text-sm">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
+        <p class="text-[#4e5c74] font-body text-sm">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. <?php echo esc_html( kp_t( 'footer_rights' ) ); ?></p>
     </div>
     <div class="flex flex-col gap-4">
-        <h4 class="font-headline font-bold text-[#006479]">Quick Links</h4>
+        <h4 class="font-headline font-bold text-[#006479]"><?php echo esc_html( kp_t( 'footer_links' ) ); ?></h4>
         <div class="grid grid-cols-2 gap-2">
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( home_url( '/programs' ) ); ?>">Programs</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="#">Privacy Policy</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( home_url( '/activities' ) ); ?>">Play-Hub</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="#">Terms of Play</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="#">Parents</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( home_url( '/join' ) ); ?>">Contact Us</a>
-            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( home_url( '/about' ) ); ?>">About Us</a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( kp_url( '/programs' ) ); ?>"><?php echo esc_html( kp_t( 'nav_programs' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="#"><?php echo esc_html( kp_t( 'footer_privacy' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( kp_url( '/activities' ) ); ?>"><?php echo esc_html( kp_t( 'nav_play_hub' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="#"><?php echo esc_html( kp_t( 'footer_terms' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( kp_url( '/parents' ) ); ?>"><?php echo esc_html( kp_t( 'nav_parents' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( kp_url( '/join' ) ); ?>"><?php echo esc_html( kp_t( 'footer_contact' ) ); ?></a>
+            <a class="text-[#4e5c74] font-body text-sm hover:text-[#006479] transition-colors" href="<?php echo esc_url( kp_url( '/about' ) ); ?>"><?php echo esc_html( kp_t( 'nav_about' ) ); ?></a>
         </div>
     </div>
     <div class="flex flex-col gap-4">
-        <h4 class="font-headline font-bold text-[#006479]">Connect</h4>
+        <h4 class="font-headline font-bold text-[#006479]"><?php echo esc_html( kp_t( 'footer_connect' ) ); ?></h4>
         <div class="flex gap-4">
             <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#006479] hover:scale-110 transition-transform cursor-pointer">
                 <span class="material-symbols-outlined">share</span>

@@ -4,6 +4,24 @@
  * Enqueues assets, registers nav menus, and sets up theme support.
  */
 
+// ── Language helpers ───────────────────────────────────────────────────────
+require_once get_template_directory() . '/languages.php';
+
+// ── Language URL routing (/en/ prefix for English) ─────────────────────────
+add_action( 'init', function () {
+    // /en  or  /en/          → front page (WordPress serves its configured front page)
+    add_rewrite_rule( '^en/?$', 'index.php', 'top' );
+    // /en/about  /en/programs  etc. → the matching page slug
+    add_rewrite_rule( '^en/(.+?)/?$', 'index.php?pagename=$matches[1]', 'top' );
+} );
+
+// Flush rewrite rules once whenever the theme is activated.
+add_action( 'after_switch_theme', function () {
+    add_rewrite_rule( '^en/?$', 'index.php', 'top' );
+    add_rewrite_rule( '^en/(.+?)/?$', 'index.php?pagename=$matches[1]', 'top' );
+    flush_rewrite_rules();
+} );
+
 // ── Theme support ──────────────────────────────────────────────────────────
 add_action( 'after_setup_theme', function () {
     add_theme_support( 'title-tag' );

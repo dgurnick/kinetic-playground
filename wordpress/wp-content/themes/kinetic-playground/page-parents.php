@@ -5,12 +5,12 @@ get_header(); ?>
 
     <!-- Hero -->
     <header class="text-center mb-20 relative">
-        <div class="inline-block px-6 py-2 bg-surface-container-high text-primary rounded-full font-bold text-sm mb-6">FOR THE GROWN-UPS</div>
+        <div class="inline-block px-6 py-2 bg-surface-container-high text-primary rounded-full font-bold text-sm mb-6"><?php echo esc_html( kp_t( 'parents_badge' ) ); ?></div>
         <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6">
-            Everything You Need to <span class="text-primary">Know</span>
+            <?php echo esc_html( kp_t( 'parents_h1_1' ) ); ?> <span class="text-primary"><?php echo esc_html( kp_t( 'parents_h1_2' ) ); ?></span>
         </h1>
         <p class="text-on-surface-variant text-xl max-w-2xl mx-auto leading-relaxed">
-            We know you have questions. Here's everything parents want to know before their child's first day — and after.
+            <?php echo esc_html( kp_t( 'parents_subtitle' ) ); ?>
         </p>
         <div class="absolute top-1/4 -left-20 w-64 h-64 bg-secondary-container/20 blur-3xl rounded-full -z-10"></div>
         <div class="absolute top-0 -right-20 w-80 h-80 bg-primary-container/20 blur-3xl rounded-full -z-10"></div>
@@ -23,48 +23,48 @@ get_header(); ?>
             <div class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-primary-container text-2xl">shield_with_heart</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Safety First, Always</h3>
-            <p class="text-on-surface-variant leading-relaxed">All surfaces are soft and impact-rated. Staff are certified in first aid and child CPR. We maintain a strict 1:6 staff-to-child ratio at all times.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_safety_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_safety_desc' ) ); ?></p>
         </div>
         <!-- Drop-off -->
         <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/10 group hover:shadow-xl transition-all duration-300">
             <div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-secondary-container text-2xl">directions_car</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Easy Drop-Off</h3>
-            <p class="text-on-surface-variant leading-relaxed">Dedicated drop-off and pick-up zone with covered parking. Staff greet children at the car door. No long walks with little ones in the rain.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_dropoff_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_dropoff_desc' ) ); ?></p>
         </div>
         <!-- Parent Lounge -->
         <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/10 group hover:shadow-xl transition-all duration-300">
             <div class="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-tertiary-container text-2xl">coffee</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Parent Lounge</h3>
-            <p class="text-on-surface-variant leading-relaxed">Stay and unwind in our comfortable lounge with complimentary coffee, fast WiFi, and a viewing window so you can watch without distracting your little one.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_lounge_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_lounge_desc' ) ); ?></p>
         </div>
         <!-- Communication -->
         <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/10 group hover:shadow-xl transition-all duration-300">
             <div class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-primary-container text-2xl">notifications</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Always in the Loop</h3>
-            <p class="text-on-surface-variant leading-relaxed">Weekly recap emails, progress photos after every class, and a parent app to track attendance, upcoming events, and session notes.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_loop_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_loop_desc' ) ); ?></p>
         </div>
         <!-- Allergies -->
         <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/10 group hover:shadow-xl transition-all duration-300">
             <div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-secondary-container text-2xl">health_and_safety</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Allergy &amp; Health Aware</h3>
-            <p class="text-on-surface-variant leading-relaxed">Nut-free facility. All health notes and allergy profiles are reviewed by staff before your child's first session. We take special needs seriously.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_allergy_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_allergy_desc' ) ); ?></p>
         </div>
         <!-- Flexible Plans -->
         <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/10 group hover:shadow-xl transition-all duration-300">
             <div class="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-on-tertiary-container text-2xl">swap_horiz</span>
             </div>
-            <h3 class="font-headline text-xl font-bold text-on-surface mb-3">Flexible Plans</h3>
-            <p class="text-on-surface-variant leading-relaxed">Pause or change programs at the end of any month — no penalty. Life with kids is unpredictable; your membership shouldn't make it harder.</p>
+            <h3 class="font-headline text-xl font-bold text-on-surface mb-3"><?php echo esc_html( kp_t( 'parents_flex_title' ) ); ?></h3>
+            <p class="text-on-surface-variant leading-relaxed"><?php echo esc_html( kp_t( 'parents_flex_desc' ) ); ?></p>
         </div>
     </section>
 
@@ -72,17 +72,17 @@ get_header(); ?>
     <section class="mb-24 bg-surface-container-low rounded-xl p-10 md:p-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
-                <h2 class="font-headline text-3xl font-extrabold text-on-surface mb-6">What to Bring</h2>
-                <p class="text-on-surface-variant mb-8">Keep it simple. Here's our recommended checklist for every visit:</p>
+                <h2 class="font-headline text-3xl font-extrabold text-on-surface mb-6"><?php echo esc_html( kp_t( 'parents_bring_title' ) ); ?></h2>
+                <p class="text-on-surface-variant mb-8"><?php echo esc_html( kp_t( 'parents_bring_desc' ) ); ?></p>
                 <ul class="space-y-4">
                     <?php
                     $items = [
-                        ['sports_and_outdoors', 'Comfortable, stretchy clothing — kids move a lot!'],
-                        ['sports', 'Closed-toe sneakers (no sandals or Crocs on the floor)'],
-                        ['water_drop', 'A labelled water bottle'],
-                        ['lunch_dining', 'A nut-free snack for longer sessions'],
-                        ['medication', 'Any prescribed medication with written instructions'],
-                        ['sentiment_satisfied', 'A big smile — everything else we take care of'],
+                        ['sports_and_outdoors', kp_t('parents_bring1')],
+                        ['sports',              kp_t('parents_bring2')],
+                        ['water_drop',          kp_t('parents_bring3')],
+                        ['lunch_dining',        kp_t('parents_bring4')],
+                        ['medication',          kp_t('parents_bring5')],
+                        ['sentiment_satisfied', kp_t('parents_bring6')],
                     ];
                     foreach ( $items as $item ) : ?>
                     <li class="flex items-start gap-4">
@@ -95,24 +95,24 @@ get_header(); ?>
                 </ul>
             </div>
             <div>
-                <h2 class="font-headline text-3xl font-extrabold text-on-surface mb-6">Hours &amp; Location</h2>
+                <h2 class="font-headline text-3xl font-extrabold text-on-surface mb-6"><?php echo esc_html( kp_t( 'parents_hours_title' ) ); ?></h2>
                 <div class="space-y-6">
                     <div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
                         <h4 class="font-headline font-bold text-primary mb-4 flex items-center gap-2">
-                            <span class="material-symbols-outlined">schedule</span> Opening Hours
+                            <span class="material-symbols-outlined">schedule</span> <?php echo esc_html( kp_t( 'parents_hours_label' ) ); ?>
                         </h4>
                         <div class="space-y-2 text-on-surface-variant">
-                            <div class="flex justify-between"><span>Monday – Friday</span><span class="font-medium text-on-surface">8:00 AM – 7:00 PM</span></div>
-                            <div class="flex justify-between"><span>Saturday</span><span class="font-medium text-on-surface">8:00 AM – 5:00 PM</span></div>
-                            <div class="flex justify-between"><span>Sunday</span><span class="font-medium text-on-surface">10:00 AM – 3:00 PM</span></div>
+                            <div class="flex justify-between"><span><?php echo esc_html( kp_t( 'parents_monday_friday' ) ); ?></span><span class="font-medium text-on-surface">8:00 - 19:00</span></div>
+                            <div class="flex justify-between"><span><?php echo esc_html( kp_t( 'parents_saturday' ) ); ?></span><span class="font-medium text-on-surface">8:00 - 17:00</span></div>
+                            <div class="flex justify-between"><span><?php echo esc_html( kp_t( 'parents_sunday' ) ); ?></span><span class="font-medium text-on-surface">10:00 - 15:00</span></div>
                         </div>
                     </div>
                     <div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
                         <h4 class="font-headline font-bold text-primary mb-4 flex items-center gap-2">
-                            <span class="material-symbols-outlined">location_on</span> Address
+                            <span class="material-symbols-outlined">location_on</span> <?php echo esc_html( kp_t( 'parents_address_label' ) ); ?>
                         </h4>
-                        <p class="text-on-surface-variant">123 Energy Lane<br/>Brighton Heights, BH 90210</p>
-                        <p class="text-sm text-on-surface-variant mt-2">Ample free parking on-site. Bus routes 14 and 22 stop directly outside.</p>
+                        <p class="text-on-surface-variant"><?php echo kp_t( 'parents_address' ); ?></p>
+                        <p class="text-sm text-on-surface-variant mt-2"><?php echo esc_html( kp_t( 'parents_address_note' ) ); ?></p>
                     </div>
                 </div>
             </div>
@@ -122,11 +122,11 @@ get_header(); ?>
     <!-- CTA -->
     <section class="text-center bg-primary-container rounded-xl p-12 relative overflow-hidden">
         <div class="relative z-10">
-            <h2 class="font-headline text-3xl font-extrabold text-on-primary-container mb-4">Still have questions?</h2>
-            <p class="text-on-primary-container/80 mb-8 text-lg max-w-xl mx-auto">Our team is always happy to chat — by phone, email, or in person. Come by for a free tour anytime.</p>
+            <h2 class="font-headline text-3xl font-extrabold text-on-primary-container mb-4"><?php echo esc_html( kp_t( 'parents_cta_title' ) ); ?></h2>
+            <p class="text-on-primary-container/80 mb-8 text-lg max-w-xl mx-auto"><?php echo esc_html( kp_t( 'parents_cta_desc' ) ); ?></p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="<?php echo esc_url( home_url( '/join' ) ); ?>" class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold shadow-xl hover:scale-105 transition-all text-center">Get in Touch</a>
-                <a href="<?php echo esc_url( home_url( '/programs' ) ); ?>" class="bg-surface-container-lowest text-on-primary-container px-10 py-4 rounded-full font-headline font-bold hover:bg-white transition-colors text-center">View Programs</a>
+                <a href="<?php echo esc_url( kp_url( '/join' ) ); ?>" class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold shadow-xl hover:scale-105 transition-all text-center"><?php echo esc_html( kp_t( 'parents_cta1' ) ); ?></a>
+                <a href="<?php echo esc_url( kp_url( '/programs' ) ); ?>" class="bg-surface-container-lowest text-on-primary-container px-10 py-4 rounded-full font-headline font-bold hover:bg-white transition-colors text-center"><?php echo esc_html( kp_t( 'parents_cta2' ) ); ?></a>
             </div>
         </div>
         <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 organic-blob -translate-x-1/2 -translate-y-1/2"></div>
