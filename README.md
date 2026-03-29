@@ -76,6 +76,19 @@ Rather than typing commands, VS Code tasks are set up so you can manage the site
 
 ---
 
+## Screenshots
+
+| Page | Preview |
+|---|---|
+| **Home** | ![Home page](docs/screenshots/home.png) |
+| **Programs** | ![Programs page](docs/screenshots/programs.png) |
+| **Play-Hub** | ![Play-Hub page](docs/screenshots/play-hub.png) |
+| **Parents** | ![Parents page](docs/screenshots/parents.png) |
+| **About** | ![About page](docs/screenshots/about.png) |
+| **Join** | ![Join page](docs/screenshots/join.png) |
+
+---
+
 ## The Design: "The Kinetic Playground"
 
 The design system was created in Stitch and is named **"The Digital Playhouse."** Here are the key visual decisions in plain language:
