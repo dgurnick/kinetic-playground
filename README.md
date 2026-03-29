@@ -8,11 +8,13 @@ This project is a website built on WordPress, designed using Google Stitch, and 
 
 A children's activity platform called **"Join the Fun"** — inspired by the design concept **"The Kinetic Playground."** The site has a playful, high-end feel with soft shapes, sky blue tones, and a layout meant to feel energetic for children and trustworthy for parents.
 
-The site has four pages:
+The site has six pages:
 - **Home** — the main landing page
-- **About Our Story** — background and mission
-- **Play-Hub Activities** — browsable activity listings
-- **Join the Fun** — a sign-up / registration page
+- **Programs** — pricing tiers, weekly schedule, and enrollment
+- **Play-Hub** — browsable activity listings by age group
+- **Parents** — safety info, drop-off procedures, lounge details, and FAQs
+- **About Us** — background, philosophy, and the team
+- **Join** — a sign-up / contact form
 
 ---
 
@@ -139,12 +141,53 @@ wpdemo/
 ├── .vscode/
 │   ├── mcp.json          ← Stitch connection config (kept private)
 │   └── tasks.json        ← VS Code one-click tasks for managing the site
-├── wordpress/            ← All WordPress files (the live site)
+├── stitch-screens/
+│   ├── home.html         ← Stitch-exported design for Home
+│   ├── about.html        ← Stitch-exported design for About Us
+│   ├── activities.html   ← Stitch-exported design for Play-Hub
+│   └── join.html         ← Stitch-exported design for Join
+├── wordpress/
+│   └── wp-content/
+│       └── themes/
+│           └── kinetic-playground/
+│               ├── style.css           ← Theme registration
+│               ├── functions.php       ← Theme setup, Tailwind, fonts, color tokens
+│               ├── header.php          ← Sticky pill navigation
+│               ├── footer.php          ← 3-column footer
+│               ├── index.php           ← Fallback loop template
+│               ├── front-page.php      ← Home page (hero, bento, testimonials)
+│               ├── page-about.php      ← About Us page
+│               ├── page-activities.php ← Play-Hub page
+│               ├── page-join.php       ← Join page
+│               ├── page-programs.php   ← Programs page (pricing, schedule)
+│               └── page-parents.php    ← Parents page (safety, hours, FAQs)
 ├── .env                  ← Login credentials (kept private)
 ├── .gitignore            ← List of files that are never shared publicly
 ├── docker-compose.yml    ← Instructions for running the site locally
 └── README.md             ← This document
 ```
+
+---
+
+## Branch and Pull Request Workflow
+
+New pages are developed on feature branches rather than directly on `master`. This keeps the main branch stable and makes it easy to review changes before they go live.
+
+**Example — adding the Programs and Parents pages:**
+
+1. A new branch was created from `master`:
+   ```
+   git checkout -b feature/missing-pages
+   ```
+2. New template files were written in VS Code (`page-programs.php`, `page-parents.php`).
+3. The pages were created in WordPress via WP-CLI and assigned their templates.
+4. Changes were committed and the branch was pushed to GitHub:
+   ```
+   git push -u origin feature/missing-pages
+   ```
+5. A pull request can then be opened on GitHub to merge the branch into `master`.
+
+This same pattern should be followed for any future page additions or significant theme changes.
 
 ---
 

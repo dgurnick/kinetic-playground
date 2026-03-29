@@ -18,7 +18,7 @@
     <nav class="hidden md:flex gap-8 items-center">
         <a class="font-headline font-bold tracking-tight text-[#4e5c74] hover:scale-105 transition-transform duration-300 hover:text-[#006479]" href="<?php echo esc_url( home_url( '/programs' ) ); ?>">Programs</a>
         <a class="font-headline font-bold tracking-tight text-[#4e5c74] hover:scale-105 transition-transform duration-300 hover:text-[#006479]" href="<?php echo esc_url( home_url( '/activities' ) ); ?>">Play-Hub</a>
-        <a class="font-headline font-bold tracking-tight text-[#4e5c74] hover:scale-105 transition-transform duration-300 hover:text-[#006479]" href="#">Parents</a>
+        <a class="font-headline font-bold tracking-tight text-[#4e5c74] hover:scale-105 transition-transform duration-300 hover:text-[#006479]" href="<?php echo esc_url( home_url( '/parents' ) ); ?>">Parents</a>
         <a class="font-headline font-bold tracking-tight text-[#4e5c74] hover:scale-105 transition-transform duration-300 hover:text-[#006479]" href="<?php echo esc_url( home_url( '/about' ) ); ?>">About Us</a>
     </nav>
     <a href="<?php echo esc_url( home_url( '/join' ) ); ?>" class="bg-gradient-to-br from-primary to-primary-fixed text-on-primary px-8 py-3 rounded-full font-headline font-bold shadow-lg hover:scale-105 transition-transform active:scale-95 duration-150">
