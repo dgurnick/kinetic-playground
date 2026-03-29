@@ -31,5 +31,21 @@ services:
     volumes:
       - ./wordpress:/var/www/html
 
+  # WP-CLI — only active when running setup: `docker compose run --rm cli wp ...`
+  cli:
+    image: wordpress:cli
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+    volumes:
+      - ./wordpress:/var/www/html
+    profiles:
+      - setup
+
 volumes:
   db_data:
